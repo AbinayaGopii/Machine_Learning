@@ -30,7 +30,7 @@ The following steps were followed in the project:
 5. **Model Evaluation**:
 6. Accuracy, precision, recall, F1-score, and ROC-AUC were calculated to evaluate the performance of each classifier.
 
-# Classifier Performance
+# CLASSIFIER PERFORMANCE
 Here is a summary of the performance of each classifier evaluated in this project:
 
 | Classifier                      | Train Accuracy | Test Accuracy |
@@ -47,3 +47,8 @@ Here is a summary of the performance of each classifier evaluated in this projec
 | Random Forest                   |     0.96       |     0.95      |
 | SVM (Support Vector Machine)    |     0.91       |     0.90      |
 | XGBoost                         |     0.99       |     0.92      |
+
+# EXPERIMENTAL RESULTS AND DISCUSSION
+Based on the updated results, the Random Forest classifier now exhibits the highest accuracy on the testing dataset (95%), surpassing all other models. However, it's crucial to consider additional metrics such as precision, recall, and F1-score for a comprehensive evaluation of model performance. Despite its high accuracy, we observe that Random Forest may not be the optimal choice if detecting all instances of fraud is crucial, as it may have lower recall compared to other models.
+
+Logistic Regression still maintains a good balance between precision, recall, and accuracy, making it a strong candidate for credit card fraud detection in this scenario. While Random Forest shows promising results, further fine-tuning and testing on larger datasets are necessary to confirm its effectiveness in real-world applications.
